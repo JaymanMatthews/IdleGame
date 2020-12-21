@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    user-select: none;
+    text-align: center;
+}
+
+.currency-container {
+    padding: 30px;
+}
+
+.upgrades {
+    color: white;
+    margin: 8px;
+    padding: 6px;
+}
