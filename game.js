@@ -8,22 +8,12 @@ const def_data = {
     },
     "upgrades": {
         0: new Upgrade({
-            "cost": 10,
             "amount_bought": 0,
-            "cost_multi": 1.07,
-            "increase_val": 1,
-            "available_color": "green",
-            "unavailable_color": "red",
-            "button_element": upgrade_buttons[0]
+            "no": 1
         }),
         1: new Upgrade({
-            "cost": 100,
             "amount_bought": 0,
-            "cost_multi": 1.4,
-            "increase_val": 10,
-            "available_color": "#66CD00",
-            "unavailable_color": "#DC143C",
-            "button_element": upgrade_buttons[1]
+            "no": 2
         })
     }
 };
@@ -77,12 +67,10 @@ class Game {
     init_display() {
         coin_text.textContent = `${this.cc.toFixed(2)} coins`;
         cps_text.textContent = `${this.cps.toFixed(2)} coins per second`;
-        for (let i in upgrade_buttons) {
-            upgrade_buttons[i].textContent = `Cost: ${this.upgrade[i].c.toFixed(2)} coins`;
-            upgrade_buttons[i].onclick = () => this.upgrade[i].buy();
-        }
         for (let i in this.upgrade) {
-            this.upgrade[i] = new Upgrade(this.upgrade[i]);
+            this.upgrade[i].cost_element.textContent = `Cost: ${this.upgrade[i].cost.toFixed(2)} coins`;
+            this.upgrade[i].inc_element.textContent = `CpS Boost: ${this.upgrade[i].inc.toFixed(2)}`;
+            this.upgrade[i].button_element.onclick = () => this.upgrade[i].buy();
         }
     }
     update_state() {

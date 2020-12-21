@@ -1,2 +1,3 @@
 TODO 1. Debug the save/load system with the tagging/automatic-serialization of classes
-TODO 2. N/A
+TODO 2. Work on optimizing upgrade increase/cost procedures.
+TODO 3. Work on upgrade/game classes. Make them cleaner and more efficient.

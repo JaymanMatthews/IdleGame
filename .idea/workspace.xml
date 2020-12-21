@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342dfc8d-969e-4ebc-b7a7-7c32e59b68cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+    <list default="true" id="342dfc8d-969e-4ebc-b7a7-7c32e59b68cd" name="Default Changelist" comment="Added TODO.txt">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upgrades.js" beforeDir="false" afterPath="$PROJECT_DIR$/upgrades.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upgrades.ts" beforeDir="false" afterPath="$PROJECT_DIR$/upgrades.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +37,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -56,8 +66,18 @@
       <workItem from="1608437758806" duration="2679000" />
       <workItem from="1608444783375" duration="15294000" />
       <workItem from="1608480641037" duration="2795000" />
-      <workItem from="1608519655736" duration="2096000" />
+      <workItem from="1608519655736" duration="2455000" />
+      <workItem from="1608542818385" duration="1048000" />
+      <workItem from="1608543874670" duration="8405000" />
     </task>
+    <task id="LOCAL-00001" summary="Added TODO.txt">
+      <created>1608521932736</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608521932736</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +89,21 @@
         <option value="$PROJECT_DIR$/class_serialization.js" />
       </list>
     </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added TODO.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TODO.txt" />
   </component>
 </project>
