@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342dfc8d-969e-4ebc-b7a7-7c32e59b68cd" name="Default Changelist" comment="Added TODO.txt">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="342dfc8d-969e-4ebc-b7a7-7c32e59b68cd" name="Default Changelist" comment="Added TODO.txt.. Started refactoring/playing around with game.ts/js and upgrades.ts/js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upgrades.js" beforeDir="false" afterPath="$PROJECT_DIR$/upgrades.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upgrades.ts" beforeDir="false" afterPath="$PROJECT_DIR$/upgrades.ts" afterDir="false" />
     </list>
@@ -68,7 +63,8 @@
       <workItem from="1608480641037" duration="2795000" />
       <workItem from="1608519655736" duration="2455000" />
       <workItem from="1608542818385" duration="1048000" />
-      <workItem from="1608543874670" duration="8405000" />
+      <workItem from="1608543874670" duration="8513000" />
+      <workItem from="1608555484362" duration="2773000" />
     </task>
     <task id="LOCAL-00001" summary="Added TODO.txt">
       <created>1608521932736</created>
@@ -77,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608521932736</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added TODO.txt.. Started refactoring/playing around with game.ts/js and upgrades.ts/js">
+      <created>1608552908592</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608552908593</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added TODO.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TODO.txt" />
+    <MESSAGE value="Added TODO.txt.. Started refactoring/playing around with game.ts/js and upgrades.ts/js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TODO.txt.. Started refactoring/playing around with game.ts/js and upgrades.ts/js" />
   </component>
 </project>

@@ -85,6 +85,7 @@ class Game {
         // @ts-ignore
         Object.assign(this.state, saved_state);
         this.init_display();
+        for (let i in this.upgrade) this.upgrade[i].init_display();
     }
 
     reset() {
@@ -99,11 +100,6 @@ class Game {
     init_display() {
         coin_text.textContent = `${this.cc.toFixed(2)} coins`;
         cps_text.textContent = `${this.cps.toFixed(2)} coins per second`;
-        for (let i in this.upgrade) {
-            this.upgrade[i].cost_element.textContent = `Cost: ${this.upgrade[i].cost.toFixed(2)} coins`;
-            this.upgrade[i].inc_element.textContent = `CpS Boost: ${this.upgrade[i].inc.toFixed(2)}`;
-            this.upgrade[i].button_element.onclick = () => this.upgrade[i].buy();
-        }
     }
 
     update_state() {
