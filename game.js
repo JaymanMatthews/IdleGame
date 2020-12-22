@@ -8,11 +8,17 @@ const def_data = {
     },
     "upgrades": {
         0: new Upgrade({
+            "base_cost": 10,
             "amount_bought": 0,
+            "is_unlocked": true,
+            "unlock_amt": 0,
             "no": 1
         }),
         1: new Upgrade({
+            "base_cost": 100,
             "amount_bought": 0,
+            "is_unlocked": false,
+            "unlock_amt": 150,
             "no": 2
         })
     }
@@ -20,17 +26,19 @@ const def_data = {
 class Game {
     constructor(given_state) {
         this.state = given_state;
-        this.update_interval = 50;
-        this.current_time = Date.now();
-        this.update_loop = setInterval(() => this.update_state(), this.update_interval);
-        this.on_load = window.onload = () => this.init();
+        this.misc = {
+            update_interval: 50,
+            current_time: Date.now(),
+            update_loop: setInterval(() => this.update_state(), this["update_interval"]),
+            on_load: window.onload = () => this.init()
+        };
     }
     set cc(new_coins) {
         this.state["coins"].current = new_coins;
         coin_text.textContent = `${this.cc.toFixed(2)} coins`;
         for (let i in this.upgrade) {
-            this.upgrade[i].background_color = this.upgrade[i].color;
-            this.upgrade[i].cursor_type = this.upgrade[i].cursor;
+            this.upgrade[i].change_display_properties();
+            this.upgrade[i].show();
         }
     }
     get cc() {
@@ -57,8 +65,6 @@ class Game {
         // @ts-ignore
         Object.assign(this.state, saved_state);
         this.init_display();
-        for (let i in this.upgrade)
-            this.upgrade[i].init_display();
     }
     reset() {
     }
@@ -72,8 +78,8 @@ class Game {
     }
     update_state() {
         const delta_time = Date.now();
-        this.add_coins((delta_time - this.current_time) / 1000);
-        this.current_time = delta_time;
+        this.add_coins((delta_time - this.misc["current_time"]) / 1000);
+        this.misc["current_time"] = delta_time;
     }
     add_coins(ticks) {
         this.cc += this.cps * (ticks);

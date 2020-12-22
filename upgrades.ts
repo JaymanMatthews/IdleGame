@@ -1,7 +1,10 @@
 ///<reference path="index.ts"/>
 
 interface Upgrade_Data {
+    "base_cost": number,
     "amount_bought": number,
+    "is_unlocked": boolean,
+    "unlock_amt": number,
     "no": number
 }
 
@@ -11,6 +14,7 @@ class Upgrade {
     constructor(given_state: Upgrade_Data) {
         // @ts-ignore
         Object.assign(this, given_state);
+        this.init_display();
     }
 
     get elements() {
@@ -22,11 +26,11 @@ class Upgrade {
     }
 
     get cost() {
-        return Math.pow(2, this["amount_bought"] + 1) * this["no"];
+        return Math.pow(this["base_cost"], this["amount_bought"] + 1);
     }
 
     get inc() {
-        return 1 + ((this["amount_bought"] / 5) * (this["no"] * 2));
+        return (1 + this["amount_bought"]) * Math.log(this["base_cost"] * this.cost);
     }
 
     init_display() {
@@ -40,12 +44,33 @@ class Upgrade {
         this.elements[2].textContent = this.inc_display;
     }
 
+    change_display_properties() {
+        this.background_color = this.color;
+        this.cursor_type = this.cursor;
+    }
+
+    show() {
+        this.button_display = this.display;
+    }
+
     get inc_display() {
         return `CpS Boost: ${this.inc.toFixed(2)}`;
     }
 
     get cost_display() {
         return `Cost: ${this.cost.toFixed(2)} coins`;
+    }
+
+    set button_display(new_display_val) {
+        this.elements[0].style.visibility = new_display_val;
+    }
+
+    get display() {
+        return (this.can_unlock) ? "visible" : "hidden";
+    }
+
+    get unlock_req() {
+        return this["unlock_amt"];
     }
 
     set background_color(new_color) {
@@ -66,6 +91,10 @@ class Upgrade {
 
     get can_buy() {
         return game.cc >= this.cost;
+    }
+
+    get can_unlock() {
+        return game.cc >= this.unlock_req;
     }
 
     buy() {
